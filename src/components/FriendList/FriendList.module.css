@@ -1,0 +1,38 @@
+.statusOnline {
+  color: green;
+}
+
+.statusOfline {
+  color: red;
+}
+
+.listContainer {
+  display: flex;
+  margin-top: 32px;
+}
+
+.list {
+  display: flex;
+
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.item {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+
+.name {
+}
