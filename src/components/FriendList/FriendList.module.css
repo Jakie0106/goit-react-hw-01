@@ -2,7 +2,7 @@
   color: green;
 }
 
-.statusOfline {
+.statusOffline {
   color: red;
 }
 
@@ -32,7 +32,4 @@
   width: 40px;
   height: 40px;
   margin-bottom: 12px;
-}
-
-.name {
 }

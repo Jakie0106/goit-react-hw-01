@@ -1,23 +1,18 @@
 import friendStyle from "./FriendList.module.css";
-const FriendListItem = ({ friends }) => {
+import FriendListItem from "../FriendListItem/FriendListItem";
+
+const FriendList = ({ friends }) => {
   return (
     <div className={friendStyle.listContainer}>
       <ul className={friendStyle.list}>
         {friends.map((friend) => {
           return (
             <li className={friendStyle.item} key={friend.id}>
-              <img
-                className={friendStyle.img}
-                src={friend.avatar}
-                alt="Avatar"
-                width="48"
+              <FriendListItem
+                avatar={friend.avatar}
+                name={friend.name}
+                isOnline={friend.isOnline}
               />
-              <p className={friendStyle.name}>{friend.name}</p>
-              {friend.isOnline ? (
-                <p className={friendStyle.statusOnline}>Online</p>
-              ) : (
-                <p className={friendStyle.statusOfline}>Ofline</p>
-              )}
             </li>
           );
         })}
@@ -26,4 +21,4 @@ const FriendListItem = ({ friends }) => {
   );
 };
 
-export default FriendListItem;
+export default FriendList;
